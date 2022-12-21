@@ -1,0 +1,169 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+#root {
+  text-align: center;
+  background-color: var(--secundaryColor);
+}
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primariColor: #fbcb1c;
+  --secundaryColor: #3361a5;
+  --darkColor: #312e31;
+}
+
+.bg-navbar{
+  background-color: var(--primariColor);
+  position: fixed;
+  top: 0;
+  right: 0 ;
+  left: 0;
+}
+.img-logo {
+  width: 150px;
+}
+.bg-navbar .navbar-container{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App{
+  padding-top: 100px;
+}
+.container-form{
+  display: flex;
+  gap: 10px
+}
+
+.container-card {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card{
+  color: white;
+  background-color: rgb(58, 113, 242);
+  width: 230px;
+  height: 100px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container-right {
+ 
+  margin-left: 10px;
+  text-align: left;
+}
+
+.container-right h3{
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.container-right div{
+  margin: 2px;
+  padding:  2px 5px;
+  color: #312e31;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+  .fire{
+    background-color: #fb964e;
+  } 
+
+  .grass{
+    background-color: #7ddb84;
+  }
+  .electric{
+    background-color: #FFE43B;
+  }
+  .water{
+    background-color: #4182ea;
+  }
+  .ground{
+    background-color: #caac4d;
+  }
+  .rock{
+    background-color: #90642d;
+  }
+  .poison{
+    background-color: #9b5299;
+  }
+  .bug{
+    background-color: #e1f561;
+  }
+  .dragon{
+    background-color: #38037d;
+  }
+  .psychic{
+    background-color: #FF96B5;
+  } 
+  .flying{
+    background-color: #CDCDCD;
+  } 
+  .fighting{
+    background-color: #FF5D5D;
+  }
+  .normal{
+    background-color: #FFFFFF;
+  } 
+
+
+.imagenes{
+  width: 120px;
+  height: 120px;
+  /* position: absolute;
+  top: 0;
+  bottom: 0 ; */
+}
+/* .btn {
+  margin: 10px
+}
+
+.bg-navbar {
+  background-color: var(--primariColor);
+}
+.gap{
+  gap: 20px;
+}
+.img-logo {
+  width: 150px;
+}
+
+.card {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
+  
+}
+.types{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px
+}
+
+
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+} */
