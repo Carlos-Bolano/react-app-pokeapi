@@ -1,13 +1,13 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import { ButtonsNav } from "./components/ButtonsNav";
+import DetailsCards from "./components/DetailsCards";
 
 function App() {
   const [pokemones, setPokemones] = useState([]);
-
-
   const [anterior, setAnterior] = useState(null);
   const [siguiente, setSiguiente] = useState(null);
   const [actual, setActual] = useState(
@@ -22,8 +22,6 @@ function App() {
     setPokemones(results);
     setAnterior(data.previous);
     setSiguiente(data.next);
-
-   
   }
 
   useEffect(() => {
@@ -32,8 +30,14 @@ function App() {
 
 
   return (
-    <>
-      <Navbar />
+    <BrowserRouter> 
+       <Navbar />
+      <Routes>
+        <Route path="details" element={<DetailsCards />} />
+
+      </Routes>
+
+      
       <div className="App">
         <img
           src="https://static.wikia.nocookie.net/espokemon/images/4/46/Pok%C3%A9mon_Gotta_catch_em_all_logo.png"
@@ -67,7 +71,8 @@ function App() {
         }}
         mostrar={"Next"}
       />
-    </>
+    </BrowserRouter>
+     
   );
 }
 

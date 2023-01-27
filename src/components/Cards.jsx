@@ -1,7 +1,6 @@
 import React from "react";
 // import ContentCard from "./ContentCard";
-import { useState } from "react";
-import { PokemonDetail } from "./PokemonDetail";
+import { CardsContent } from "./CardsContent";
 
 function Cards({ pokemones }) {
   
@@ -11,7 +10,7 @@ return (
 
         return (
           <div className="card" key={pokemon.name}>
-           <PokemonDetail pokemon={pokemon}/>
+           <CardsContent pokemon={pokemon}/>
           </div>
         );
       })}

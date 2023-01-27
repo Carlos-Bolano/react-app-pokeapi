@@ -77,12 +77,13 @@ body{
   padding: 0;
   margin-bottom: 5px;
 }
-.container-right div{
+.container-right span{
   margin: 2px;
   padding:  2px 5px;
   color: #312e31;
   border-radius: 10px;
   text-transform: capitalize;
+  align-self: flex-start;
 }
 
   .fire{
@@ -126,7 +127,6 @@ body{
     background-color: #FFFFFF;
   } 
 
-
 .imagenes{
   width: 120px;
   height: 120px;
@@ -134,6 +134,9 @@ body{
   top: 0;
   bottom: 0 ; */
 }
+
+
+
 /* .btn {
   margin: 10px
 }

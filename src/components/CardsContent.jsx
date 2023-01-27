@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-export function PokemonDetail({ pokemon }) {
+export function CardsContent({ pokemon }) {
   const [img, setImg] = useState("");
   const [stats, setStats] = useState([]);
   const [type, setType] = useState([]);
@@ -24,7 +24,7 @@ export function PokemonDetail({ pokemon }) {
     <div className="container-right">
           <h3 > {pokemon.name}</h3>
           {type.map((item) => {
-            return <div className={item.type.name} > {item.type.name}</div>;
+            return <div className={item.type.name} > <span> {item.type.name}</span> </div>;
            
           })}
         </div>
